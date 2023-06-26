@@ -28,7 +28,7 @@
 # a = [8,6,3]
 
 
-
+import pprint
 class Matrix:
      """Создать матрицу"""
 
@@ -51,13 +51,13 @@ class Matrix:
      
      
      
-m = Matrix(2, 2)
+m = Matrix(6, 6)
 
 for i in range(m.get_rows_count()):
      for j in range(m.get_columns_count()):
           m.set_value(i, j, 3)
 
-print('M =',m._matrix)
+pprint.pprint(m._matrix)
 
 
 
